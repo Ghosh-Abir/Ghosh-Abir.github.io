@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="./contact.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+  rel="stylesheet"
+/>
+</head>
+<body>
+  <main>
+    <section class="landing">
+      <nav>
+        <h1 id="logo">My Portfolio</h1>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact Me</a></li>     
+        </ul>
+      </nav>
+      <div id="container">
+        <h1>&bull; Contact Me &bull;</h1>
+        <div class="underline">
+        </div>
+
+        <form action="https://formsubmit.co/780dae2bd04424cbd8ad1ef71694549a" method="POST" id="contact_form">
+          <div class="name">
+            <label for="name"></label>
+            <input type="text" placeholder="My name is" name="name" id="name_input" required>
+          </div>
+          <div class="email">
+            <label for="email"></label>
+            <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+          </div>
+          <div class="subject">
+            <label for="subject"></label>
+            <select placeholder="Subject line" name="subject" id="subject_input" required>
+              <option disabled hidden selected>Subject line</option>
+              <option>I'd like to start a project</option>
+              <option>I'd like to ask a question</option>
+              <option>I'd like to make a proposal</option>
+            </select>
+          </div>
+          <div class="message">
+            <label for="message"></label>
+            <textarea name="message" placeholder="I'd like to chat about" id="message_input" cols="30" rows="5" required></textarea>
+          </div>
+          <div class="submit">
+            <input type="submit" value="Send Message" id="form_button" />
+          </div>
+        </form><!-- // End form -->
+      </div><!-- // End #container -->
+    </section>
+  </main>
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">Contact Me</span>
+      </h1>
+    </div>
+  </div>
+  <div class="slider"></div>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"
+  ></script>
+  <script src="./app.js"></script>
+</body>
+</html>
